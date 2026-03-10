@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PSC Forest Guard Online Form - Siddanath Technical College</title>
-  <meta name="description" content="Online registration form for PSC Forest Guard by Siddanath Technical College"/>
+  <title>PSC Forest Guard Online Form - Siddhanath Technical College</title>
+  <meta name="description" content="Student Registration Form for PSC Forest Guard by Siddhanath Technical College, Surkhet"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +12,17 @@
 
   <style>
     :root {
-      --primary: #2e7d32;     /* forest green */
-      --primary-dark: #1b5e20;
-      --light: #f5f8f5;
-      --gray: #555;
-      --dark: #222;
+      --primary: #1e7e34;      /* Deep forest green */
+      --primary-light: #28a745;
+      --dark: #111;
+      --light: #f8f9fa;
+      --gray: #6c757d;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; }
 
     body {
-      font-family: 'Poppins', system-ui, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: var(--light);
       color: var(--dark);
       line-height: 1.6;
@@ -36,163 +32,160 @@
     }
 
     /* Top social bar */
-    .social-top {
+    .social-bar {
       background: var(--dark);
       padding: 1rem;
       text-align: center;
     }
 
-    .social-top a {
-      margin: 0 1.2rem;
+    .social-bar a {
+      margin: 0 1.5rem;
       display: inline-block;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s;
     }
 
-    .social-top a:hover {
-      transform: scale(1.15);
-    }
+    .social-bar a:hover { transform: scale(1.15); }
 
     .social-icon {
-      width: 48px;
-      height: 48px;
+      width: 50px;
+      height: 50px;
       object-fit: contain;
-      vertical-align: middle;
+      border-radius: 50%;
+      background: white;
+      padding: 5px;
     }
 
     header {
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      background: linear-gradient(135deg, var(--primary), #0f5c2e);
       color: white;
-      padding: 2.5rem 1rem 2rem;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 3rem 1rem 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
     }
 
     header h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.8rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
       opacity: 0.95;
-      max-width: 700px;
-      margin: 0 auto;
     }
 
-    main {
+    .form-section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
       flex: 1;
-      padding: 2rem 1rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 100%;
-    }
-
-    .form-container {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-      overflow: hidden;
-      padding: 1.5rem;
     }
 
     .form-title {
-      color: var(--primary);
       text-align: center;
-      font-size: 2rem;
+      color: var(--primary);
+      font-size: 2.2rem;
       margin-bottom: 1.5rem;
       font-weight: 600;
     }
 
-    .iframe-wrapper {
-      width: 100%;
-      min-height: 800px;
-      border: none;
-      border-radius: 8px;
+    .form-wrapper {
+      background: white;
+      border-radius: 16px;
       overflow: hidden;
-      background: #f0f7f0;
-      transition: all 0.4s ease;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+      padding: 1rem;
     }
 
     iframe {
       width: 100%;
-      height: 100%;
       border: none;
-      display: block;
+      min-height: 800px; /* fallback */
+      transition: height 0.5s ease;
     }
 
     footer {
       background: var(--dark);
-      color: #aaa;
+      color: #ccc;
       text-align: center;
-      padding: 1.8rem 1rem;
+      padding: 2rem 1rem;
       font-size: 0.95rem;
       margin-top: auto;
     }
 
     footer a {
-      color: #81c784;
+      color: var(--primary-light);
       text-decoration: none;
+      margin: 0 0.8rem;
     }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+    footer a:hover { text-decoration: underline; }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 1.9rem; }
-      .social-icon { width: 40px; height: 40px; }
-      .form-title { font-size: 1.7rem; }
+      header h1 { font-size: 2rem; }
+      .social-icon { width: 42px; height: 42px; }
+      .form-title { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Social icons at the very top -->
-  <div class="social-top">
+  <!-- Social links at top -->
+  <div class="social-bar">
     <a href="https://youtube.com/@siddhanath618?si=rCbionCzjUpmqQVX" target="_blank" rel="noopener noreferrer">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/3840px-YouTube_full-color_icon_%282017%29.svg.png" 
-           alt="YouTube" class="social-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/512px-YouTube_full-color_icon_%282017%29.svg.png" 
+           alt="YouTube Channel" class="social-icon">
     </a>
     <a href="https://www.tiktok.com/@siddhanath.surkhet?_r=1&_t=ZS-94ZMTdvFPwW" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/4tiktok.png?v=1771985418" 
-           alt="TikTok" class="social-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" 
+           alt="TikTok Profile" class="social-icon">
+    </a>
+    <a href="https://www.facebook.com/share/17A6FjjTJS/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png" 
+           alt="Facebook Page" class="social-icon">
     </a>
   </div>
 
   <header>
     <h1>PSC Forest Guard Online Form</h1>
-    <p>Student Registration by Siddanath Technical College (सिद्वनाथ टेक्निकल कलेज)</p>
+    <p>Student Registration by Siddhanath Technical College (सिद्वनाथ टेक्निकल कलेज), Surkhet</p>
   </header>
 
-  <main>
-    <div class="form-container">
-      <div class="form-title">Fill The Student Registration Form</div>
-      
-      <div class="iframe-wrapper">
-        <div id="zf_div_a1dYgSUOKJB0lxiDGz1hdnaSL2BQLoUwaYY4d9fXTNM"></div>
-      </div>
+  <section class="form-section">
+    <h2 class="form-title">Fill The Student Registration Form</h2>
+
+    <div class="form-wrapper">
+      <!-- Direct Zoho form integration -->
+      <div id="zf_div_a1dYgSUOKJB0lxiDGz1hdnaSL2BQLoUwaYY4d9fXTNM"></div>
     </div>
-  </main>
+  </section>
 
   <footer>
-    <p>&copy; 2026 Siddanath Technical College • 
-      <a href="https://www.facebook.com/share/17A6FjjTJS/" target="_blank" rel="noopener">Powered by</a></p>
+    <p>&copy; 2026 Siddhanath Technical College</p>
+    <p>
+      Follow us: 
+      <a href="https://www.tiktok.com/@siddhanath.surkhet?_r=1&_t=ZS-94ZMTdvFPwW" target="_blank">TikTok</a> • 
+      <a href="https://youtube.com/@siddhanath618?si=rCbionCzjUpmqQVX" target="_blank">YouTube</a> • 
+      <a href="https://www.facebook.com/share/17A6FjjTJS/" target="_blank">Facebook</a>
+    </p>
   </footer>
 
-  <!-- Zoho Forms embed script -->
+  <!-- Zoho Forms embed script (original, slightly cleaned) -->
   <script type="text/javascript">
   (function() {
     try {
       var f = document.createElement("iframe");
       var ifrmSrc = 'https://forms.zohopublic.com/onlineseason0gm1/form/PSCForestGuardOnlineFormStudentRegistrationBySidda/formperma/a1dYgSUOKJB0lxiDGz1hdnaSL2BQLoUwaYY4d9fXTNM?zf_rszfm=1&zf_enablecamera=true';
 
+      // UTM handling (kept as provided)
       try {
-        if (typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined") {
+        if (typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined") {
           for (var prmIdx = 0; prmIdx < ZFAdvLead.utmPNameArr.length; prmIdx++) {
             var utmPm = ZFAdvLead.utmPNameArr[prmIdx];
-            utmPm = (ZFAdvLead.isSameDomian && (ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1)) ? "zf_" + utmPm : utmPm;
+            utmPm = (ZFAdvLead.isSameDomian && ZFAdvLead.utmcustPNameArr.indexOf(utmPm) === -1) ? "zf_" + utmPm : utmPm;
             var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[prmIdx]);
-            if (typeof utmVal !== "undefined" && utmVal != "") {
+            if (typeof utmVal !== "undefined" && utmVal !== "") {
               ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
             }
           }
@@ -201,7 +194,7 @@
           for (var prmIdx = 0; prmIdx < ZFLead.utmPNameArr.length; prmIdx++) {
             var utmPm = ZFLead.utmPNameArr[prmIdx];
             var utmVal = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);
-            if (typeof utmVal !== "undefined" && utmVal != "") {
+            if (typeof utmVal !== "undefined" && utmVal !== "") {
               ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + utmPm + '=' + utmVal;
             }
           }
@@ -210,10 +203,10 @@
 
       f.src = ifrmSrc;
       f.style.border = "none";
-      f.style.height = "3632px";
+      f.style.height = "3632px"; // initial - auto-resized later
       f.style.width = "100%";
       f.style.transition = "all 0.5s ease";
-      f.setAttribute("aria-label", "लोकसेवा आयोग (PSC) बन रक्षक Forest Guard Online Form Student Registration By Siddanath Technical College");
+      f.setAttribute("aria-label", "लोकसेवा आयोग (PSC) बन रक्षक Forest Guard Online Form Student Registration By Siddanath Technical College(सिद्वनाथ टेक्निकल कलेज)");
       f.setAttribute("allow", "camera");
 
       var d = document.getElementById("zf_div_a1dYgSUOKJB0lxiDGz1hdnaSL2BQLoUwaYY4d9fXTNM");
@@ -223,32 +216,30 @@
         var evntData = e.data;
         if (evntData && typeof evntData === "string") {
           var zf_ifrm_data = evntData.split("|");
-          if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
+          if (zf_ifrm_data.length === 2 || zf_ifrm_data.length === 3) {
             var zf_perma = zf_ifrm_data[0];
             var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + "px";
             var iframe = d.getElementsByTagName("iframe")[0];
 
             if (iframe.src.indexOf('formperma') > 0 && iframe.src.indexOf(zf_perma) > 0) {
-              var prevIframeHeight = iframe.style.height;
-              var zf_tout = zf_ifrm_data.length === 3;
+              var prevHeight = iframe.style.height;
+              var scrollNeeded = zf_ifrm_data.length === 3;
 
-              if (prevIframeHeight !== zf_ifrm_ht_nw) {
-                if (zf_tout) {
-                  setTimeout(function() {
-                    iframe.style.height = zf_ifrm_ht_nw;
-                  }, 500);
+              if (prevHeight !== zf_ifrm_ht_nw) {
+                if (scrollNeeded) {
+                  setTimeout(() => { iframe.style.height = zf_ifrm_ht_nw; }, 500);
                 } else {
                   iframe.style.height = zf_ifrm_ht_nw;
                 }
               }
-              if (zf_tout) iframe.scrollIntoView({behavior: "smooth"});
+              if (scrollNeeded) iframe.scrollIntoView({ behavior: "smooth" });
             }
           }
         }
       }, false);
 
     } catch(e) {
-      console.error("Zoho form embed error:", e);
+      console.error("Zoho form load error:", e);
     }
   })();
   </script>
